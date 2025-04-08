@@ -8,7 +8,7 @@ data class PurchaseOrder (
     val id: String?,
     val vendorId: String?,
     val items: List<PurchaseOrderItem>,
-    val status: String? = "done",
+    val status: String? = "Done",
     val expectedDate: Long?,
     val createdAt: Long? = Instant.now().toEpochMilli()
 )
@@ -28,7 +28,7 @@ data class ListPurchaseOrder(
     val vendorId: String?,
     val vendorName: String?,
     val items: List<ListPurchaseOrderItem>,
-    val status: String? = "done",
+    val status: String? = "Done",
     val expectedDate: Long?,
     val createdAt: Long? = Instant.now().toEpochMilli()
 )
